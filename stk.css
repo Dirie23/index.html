@@ -1,0 +1,94 @@
+body {
+  background-image: url(images/stk-background-img.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 400px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+textarea,
+input[type="number"] {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 5px 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+button:hover{
+  opacity: .8;
+}
+
+button:active{
+  opacity: .5;
+}
+
+#program-list {
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.program-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+#delete-all {
+  padding: 5px 10px;
+  background-color: #f84444;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Accessibility Improvements */
+button,
+input[type="text"],
+textarea,
+input[type="number"],
+#search {
+  outline: none;
+}
+
+button:focus,
+input[type="text"]:focus,
+textarea:focus,
+input[type="number"]:focus,
+#search:focus {
+  box-shadow: 0 0 3px 3px rgba(0, 0, 255, 0.3);
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TV Program Manager</title>
+  <link rel="stylesheet" type="text/css" href="stk.css">
+</head>
+<body>
+  <h1>TV Program Manager</h1>
+  <form id="program-form">
+    <label for="title">Title:</label>
+    <input type="text" id="title" required aria-required="true">
+    <label for="description">Description:</label>
+    <textarea id="description" required aria-required="true"></textarea>
+    <label for="age-limit">Age Limit:</label>
+    <input type="number" id="age-limit" required aria-required="true">
+    <button type="submit">Add Program</button>  
+    <button id="delete-all">Delete All Programs</button>
+  </form>
+  <input type="text" id="search" placeholder="Search programs..." aria-label="Search programs">
+  <div id="program-list" role="list"></div>
+  
+  <script src="stk.js"></script>
+</body>
+</html>
